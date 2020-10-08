@@ -29,6 +29,9 @@ import java.util.Set;
  * 在移动结束后，这个子串就对应着 以左指针开始的，不包含重复字符的最长子串。我们记录下这个子串的长度；
  */
 public class LengthOfLongestSubstring_3 {
+    public static void main(String[] args) {
+        new LengthOfLongestSubstring_3().lengthOfLongestSubstring("abcdefffhijk");
+    }
     public int lengthOfLongestSubstring(String s) {
         // 哈希集合，记录每个字符是否出现过
         Set<Character> occ = new HashSet<Character>();
